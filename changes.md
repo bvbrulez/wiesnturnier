@@ -39,3 +39,14 @@ Wichtige Pfade:
 - .github/copilot-instructions.md
 
 Hinweis: Variablen in css/variables.css sind dokumentiert; empfohlen ist künftige Anpassungen dort vorzunehmen.
+
+- 81419e9: Accessibility & Security Verbesserungen
+  - Korrigiert: title ("Wiesnturnier 2026") und meta description hinzugefügt
+  - Semantik: <div class="container"> → <main class="container">
+  - Daten: Termine mit <time datetime="YYYY-MM-DD"> ausgezeichnet
+  - A11y: Dekorative Emojis mit aria-hidden, .icon Elemente mit aria-hidden
+  - Kontakt: Kontaktblock in <address>, Telefonnummern als tel:, E-Mail als mailto:
+  - Security: Externe Links mit target="_blank" bekommen rel="noopener noreferrer"
+  - Commit & Push: Änderungen committed (81419e9) und nach origin/main gepusht
+
+Status: Alle Änderungen wurden committed und nach origin/main gepusht. Letzter Commit: 81419e9
