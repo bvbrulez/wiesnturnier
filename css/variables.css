@@ -1,0 +1,11 @@
+/* design tokens / variables */
+:root {
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --text-color: #1a1a1a;
+  --bg-color: #f5f0e8;
+  --primary-color: #1a3c6e;
+  --accent-color: #e0a800;
+  --link-color: #2a5a9e;
+  --card-bg: #f8f6f0;
+  --muted-color: #666;
+}
