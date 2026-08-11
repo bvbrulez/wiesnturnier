@@ -1,0 +1,2 @@
+- nutze Conventional Commit Messages für jeden Commit
+- Committe immer in fachlichen Paketen
