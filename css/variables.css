@@ -1,11 +1,65 @@
-/* design tokens / variables */
+/*
+  Design tokens / CSS variables
+
+  - Purpose: Centralize colors, typography, spacing and misc tokens so the
+    visual system is consistent and easily adjustable.
+  - Usage: reference with var(--token-name) in all CSS files, e.g.
+      color: var(--text-color);
+      background: var(--card-bg);
+  - Units: Colors are hex; sizes use rem for scalability where applicable.
+  - Organization: Keep tokens grouped (type, color, spacing, layout, misc).
+
+  Change notes:
+  - Keep variable names kebab-case and semantically named (avoid direct
+    implementation names like --blue-500 unless part of a design system).
+  - Add new tokens here rather than scattering literals across files.
+*/
 :root {
+  /* --- Typography --- */
+  /* Primary font stack for system fonts with fallbacks */
   --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --text-color: #1a1a1a;
-  --bg-color: #f5f0e8;
-  --primary-color: #1a3c6e;
-  --accent-color: #e0a800;
-  --link-color: #2a5a9e;
-  --card-bg: #f8f6f0;
-  --muted-color: #666;
+  /* Base font sizing (use rem in components: e.g. font-size: 1rem) */
+  --base-font-size: 16px; /* reference only; prefer html font-size in % if needed */
+
+  /* --- Colors --- */
+  --text-color: #1a1a1a;          /* primary body text */
+  --muted-color: #666;           /* secondary text / meta */
+  --bg-color: #f5f0e8;           /* page background */
+  --card-bg: #f8f6f0;            /* card / panel background */
+
+  /* Brand / accents */
+  --primary-color: #1a3c6e;      /* primary brand color */
+  --link-color: #2a5a9e;         /* link color (use for anchors) */
+  --accent-color: #e0a800;       /* highlight / accent (buttons, borders) */
+
+  /* --- Spacing scale (preferred units: rem) --- */
+  /* Use spacing tokens for margins/padding: e.g. padding: var(--space-3); */
+  --space-0: 0rem;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 1rem;    /* 16px */
+  --space-4: 1.5rem;  /* 24px */
+  --space-5: 2rem;    /* 32px */
+
+  /* --- Layout tokens --- */
+  --container-max-width: 900px;
+  --border-radius: 12px;
+  --shadow-elevation-1: 0 2px 8px rgba(0,0,0,0.08);
+
+  /* --- Misc --- */
+  --transition-fast: 150ms ease-in-out;
+  --z-modal: 1000;
 }
+
+/* Example usage:
+
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--space-3);
+    box-shadow: var(--shadow-elevation-1);
+  }
+
+  a { color: var(--link-color); }
+
+*/
