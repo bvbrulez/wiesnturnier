@@ -1,2 +1,3 @@
 - nutze Conventional Commit Messages für jeden Commit
 - Committe immer in fachlichen Paketen
+- nutze nicht die Zeile mit Co-Authored-by
