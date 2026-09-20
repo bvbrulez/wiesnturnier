@@ -22,7 +22,7 @@
 
 ## Spielplan
 
-- siehe https://www.spielplan.de
+- siehe https://tournifyapp.com/live/oktoberfest-cup-2026
 
 # Hotel
 
